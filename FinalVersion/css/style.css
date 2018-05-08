@@ -1,0 +1,461 @@
+body {
+    padding: 0;
+    font-family: Lato;
+    overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: #242424;
+  left: 0px;
+  top: 0px
+}
+
+.header h1 {
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 12px;
+  font-size: 28px;
+  letter-spacing: 0.2em;
+  color: #BDE8F6
+}
+
+.header #tm-box {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  right: 0px;
+  top: 0px;
+  background-color: #7AC7DF;
+}
+
+.header #tm-box tm {
+  position: absolute;
+  top: 8px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF
+}
+
+.instruction{
+  position: absolute;
+  top: 30px;
+  left: 400px;
+  z-index: 4
+}
+
+.instruction-container{
+  position:absolute;
+  left: -20px;
+  top:70px;
+  width:280px;
+  font-family: Lato;
+  font-size:13px;
+  color:#eee;
+  line-height: 1.5em;
+  background-color: #242424;
+  opacity:0.9;
+  padding:10px;
+}
+
+
+.instruction-btn{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: -20px;
+  top: 40px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 12px;
+  text-align: center;
+  color: #eee;
+  letter-spacing: 0.2em;
+  background-color:#7AC7DF;
+  border-style: solid;
+  border-color: rgba(225,225,225,0.6);
+  border-width: 2;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.map {
+  position: absolute;
+  left: 320px;
+  right: 0;
+  bottom: 0;
+  top: 50px;
+  z-index:2
+}
+
+.sidebar {
+  position: absolute;
+  left: 0px;
+  width: 320px;
+  top: 50px;
+  bottom: 0;
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #353A49;
+}
+
+.sidebar .heatmap {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0px;
+  top: 0;
+  background: #31343E;
+}
+
+.sidebar .heatmap .btn {
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  left: 30px;
+  top: 20px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #F2F2F2;
+
+  background-color: #1B7A9D;
+  opacity: 0.7;
+  transition: 0.3s;
+  border: none;
+}
+.sidebar .heatmap .btn:visited {opacity: 1}
+.sidebar .heatmap .btn:focus {opacity: 1}
+.sidebar .heatmap .btn:active {opacity: 1}
+
+p {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  font-family: Lato;
+  font-size: 13px;
+  color: #BDBDBD;
+  letter-spacing: 0.1em;
+}
+.sidebar .heatmap .heat-main {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+}
+#BG-ID{
+    color: #eee;
+}
+
+.Temp-Gap{
+  position: absolute;
+  left: 30px;
+  top: 80px;
+}
+
+#Temp-Gap {
+  color: #eee;
+}
+
+p1 {
+  position: absolute;
+  left: 30px;
+  top: 112px;
+  font-size: 10px;
+  color: #BDBDBD;
+}
+
+.Temp-Level{
+  position: absolute;
+  left: 30px;
+  top: 124px;
+}
+
+#Temp-Level{
+  color: #eee;
+}
+
+/* Cooling Centers */
+.sidebar .coolingcenter {
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  left: 0px;
+  top: 175px;
+  background: #353A49;
+}
+
+.sidebar .coolingcenter .btn {
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  left: 30px;
+  top: 20px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #F2F2F2;
+
+  background-color: #1B7A9D;
+  opacity: 0.7;
+  transition: 0.3s;
+  border: none;
+}
+.sidebar .coolingcenter .btn:focus {opacity: 1}
+
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    left: 30px;
+    top: 65px;
+    width: 300px;
+    font-size: 14px;
+    font-family: Lato;
+    color: #BDBDBD;
+    display:inline-block;
+}
+
+/* Checkbox */
+.sidebar .coolingcenter .checkbox{
+  position: absolute;
+  left: 30px;
+  top: 95px
+}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #BDBDBD;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #353A4;
+  border-color: #BDBDBD;
+  border-style: solid;
+  border-width: 1px
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #41B8E2;
+}
+
+.sidebar .coolingcenter .btn1 {
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  left: 30px;
+  top: 155px;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #F2F2F2;
+
+  background-color: #4D5261;
+  opacity: 0.7;
+  transition: 0.3s;
+  border: none;
+}
+.sidebar .coolingcenter .btn1:focus {background-color: #1B7A9D;opacity: 1}
+
+.route {
+  position: absolute;
+  width: 320px;
+  height: 120px;
+  left: 0px;
+  top: 375px;
+  background: #353A49;
+  border-top: 0.5px solid #BDBDBD;
+}
+.route .btn2{
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  left: 30px;
+  top: 75px;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #F2F2F2;
+
+  background-color: #4D5261;
+  opacity: 0.7;
+  transition: 0.3s;
+  border: none;
+}
+.btn2:focus {background-color: #1B7A9D;opacity: 1}
+
+.note {
+  position: absolute;
+  width: 260px;
+  height: 50px;
+  left: 30px;
+  top: 16px;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  background-color: #3B3F49;
+  opacity: 0.8;
+  padding: 8px;
+}
+p2{
+  font-family: Lato;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.btn3{
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  left: 30px;
+  top: 115px;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #F2F2F2;
+
+  background-color: #4D5261;
+  opacity: 0.7;
+  transition: 0.3s;
+  border: none;
+}
+.btn3:focus {background-color: #1B7A9D;opacity: 1}
+
+.travel-distance{
+  position: absolute;
+  left: 30px;
+  top: 143px;
+}
+
+#TR-DIS {
+  color: #eee;
+}
+
+.travel-time{
+  position: absolute;
+  left: 30px;
+  top: 168px;
+}
+
+#TR-TI {
+  color: #eee;
+}
+
+
+.legend {
+  padding: 8px 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 26px;
+  color: #444;
+  background: rgba(241, 243, 243,0.5);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.legend .circle {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  margin-top: 8px;
+}
+
+.info {
+    padding: 8px 8px;
+    font: Lato;
+    font-size: 11px;
+    width: 235px;
+    height: 130px;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+  position:fixed;
+  font-size:14px;
+  font-weight: bold;
+  color: #4F4F4F;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+}
+.info h5{
+  position: absolute;
+  top: 40px;
+  color: #2D9CDB;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 11px;
+  letter-spacing: 0.1em;
+}
+.info h6{
+  position: absolute;
+  top: 55px;
+  color: 'black';
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
